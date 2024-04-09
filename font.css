@@ -1,1 +1,19 @@
+@media screen and (min-width: 768px) {
+    .box {
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+    }
+}
 
+@media screen and (min-width: 992px) {
+    .box {
+        width: 33.33%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .box {
+        width: 25%;
+    }
+}
