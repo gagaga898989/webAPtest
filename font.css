@@ -24,3 +24,21 @@ main {
 footer {
     text-align: center;
 }
+button {
+    background-color: #4CAF50; /* 背景色 */
+    color: white; /* 文字色 */
+    padding: 15px 32px; /* パディング */
+    text-align: center; /* 文字のアライメント */
+    text-decoration: none; /* 文字装飾 */
+    display: inline-block; /* ボタンの表示方法 */
+    font-size: 16px; /* フォントサイズ */
+    font-family: Arial, sans-serif; /* フォント */
+    margin: 4px 2px; /* 外側の余白 */
+    cursor: pointer; /* カーソル */
+    border: none; /* ボーダーなし */
+    border-radius: 50px; /* 50pxの角丸 */
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
