@@ -1,44 +1,65 @@
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+ul {
+  list-style: none;
 }
-
-/* Basic Styles */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+li {
+  border-left: solid 1px silver;
+  padding-left: 1rem;
+  position: relative;
+  box-sizing: border-box;
 }
-
-header, footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
+.toc {
+  cursor: pointer;
+  width: 100px;
 }
-
-main {
-    padding: 2rem;
+.toc:hover {
+  background: whitesmoke;
+  color: royalblue;
 }
-
-footer {
-    text-align: center;
+.toc:hover:not(.active)::before {
+  content: '';
+  position: absolute;
+  top: 0.5rem;
+  left: -3px;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  background: silver;
 }
-button {
-    background-color: #4CAF50; /* 背景色 */
-    color: white; /* 文字色 */
-    padding: 15px 32px; /* パディング */
-    text-align: center; /* 文字のアライメント */
-    text-decoration: none; /* 文字装飾 */
-    display: inline-block; /* ボタンの表示方法 */
-    font-size: 16px; /* フォントサイズ */
-    font-family: Arial, sans-serif; /* フォント */
-    margin: 4px 2px; /* 外側の余白 */
-    cursor: pointer; /* カーソル */
-    border: none; /* ボーダーなし */
-    border-radius: 50px; /* 50pxの角丸 */
+.toc.active:before {
+  content: '';
+  position: absolute;
+  top: 0.5rem;
+  left: -3px;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  background: skyblue;
 }
-
-button:hover {
-    background-color: #3e8e41;
+.wrapper {
+  width: 400px;
+  height: 300px;
+  overflow: auto;
+}
+.content {
+  overflow: hidden;
+}
+.content1 {
+  width: 100%;
+  height: 500px;
+  background: skyblue;
+}
+.content2 {
+  width: 100%;
+  height: 500px;
+  background: royalblue;
+}
+.content3 {
+  width: 100%;
+  height: 500px;
+  background: lightblue;
+}
+.content4 {
+  width: 100%;
+  height: 500px;
+  background: aliceblue;
 }
