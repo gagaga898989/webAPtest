@@ -1,20 +1,37 @@
-<ul>
-  <li class="toc" scrollTo="content1">AAAA</li>
-  <li class="toc" scrollTo="content2">BBBB</li>
-  <li class="toc" scrollTo="content3">CCCC</li>
-  <li class="toc" scrollTo="content4">DDDD</li>
-</ul>
-<div class="wrapper">
-  <div class="content content1">
-    <h1>AAAA</h1>
-  </div>
-  <div class="content content2">
-    <h1>BBBB</h1>
-  </div>
-  <div class="content content3">
-    <h1>CCCC</h1>
-  </div>
-  <div class="content content4">
-    <h1>DDDD</h1>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>目次アイコン</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="toc-icon" class="toc-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div id="content">
+        <h1 id="section1">セクション 1</h1>
+        <p>セクション1の内容...</p>
+        
+        <h1 id="section2">セクション 2</h1>
+        <p>セクション2の内容...</p>
+        
+        <h1 id="section3">セクション 3</h1>
+        <p>セクション3の内容...</p>
+    </div>
+
+    <div id="toc" class="toc">
+        <ul>
+            <li><a href="#section1">セクション 1</a></li>
+            <li><a href="#section2">セクション 2</a></li>
+            <li><a href="#section3">セクション 3</a></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
