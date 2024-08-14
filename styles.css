@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+.code-container {
+    position: relative;
+    background-color: #282c34;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 20px 0;
+    color: #f8f8f2;
+}
+
+.code-container pre {
+    margin: 0;
+}
+
+.highlight {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #61dafb;
+    white-space: pre-wrap;
+}
+
+.copy-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.copy-button:hover {
+    background-color: #21a1f1;
+}
