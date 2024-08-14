@@ -1,35 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>目次アイコン</title>
+    <title>Code Highlight and Copy</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="toc-icon" class="toc-icon">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-
-    <div id="content">
-        <h1 id="section1">セクション 1</h1>
-        <p>セクション1の内容...ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
-        
-        <h1 id="section2">セクション 2</h1>
-        <p>セクション2の内容...</p>
-        
-        <h1 id="section3">セクション 3</h1>
-        <p>セクション3の内容...</p>
-    </div>
-
-    <div id="toc" class="toc">
-        <ul>
-            <li><a href="#section1">セクション 1</a></li>
-            <li><a href="#section2">セクション 2</a></li>
-            <li><a href="#section3">セクション 3</a></li>
-        </ul>
+    <div class="code-container">
+        <button class="copy-button" onclick="copyCode()">Copy</button>
+        <pre><code class="highlight">
+const greeting = "Hello, World!";
+console.log(greeting);
+        </code></pre>
     </div>
 
     <script src="script.js"></script>
